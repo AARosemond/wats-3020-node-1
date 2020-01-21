@@ -9,7 +9,7 @@ let input = getargs.getIntegerArg();
 /**** Do not modify anything above this line ****/
 
 // test that input is a number
-// TODO use the if statement to check input using isNaN and NOT Number.isInteger 
+
 if (isNaN (input) || !Number .isInteger(input)) {
   // added usage statement if user fails to enter a number
   console.log("usage:node 2-odd-even <integer>");
