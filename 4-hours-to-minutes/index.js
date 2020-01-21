@@ -8,7 +8,6 @@ let input = getargs.getIntegerArg();
 
 /**** Do not modify anything above this line ****/
 
-// test that input is a number
 if ( isNaN(input) || !Number.isInteger(input)){
   console.log("usage : node 4-hours-to-minutes <interger>");
 } else {

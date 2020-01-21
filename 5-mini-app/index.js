@@ -10,3 +10,12 @@
 // get an integer using getargs
 let getargs = require("../modules/getargs/index.js");
 let input = getargs.getIntegerArg();
+
+if ( isNaN(input) || !Number.isInteger(input)){
+    console.log("usage : node 5-mini-app <interger>");
+  } else {
+    let degrees = ((input * 9/5) + 32);
+    let deg = degrees > 1 ? "degrees" : "degree";
+    console.log(`${input} degrees celsius is ${degrees} fahrenheit`);
+  }
+
