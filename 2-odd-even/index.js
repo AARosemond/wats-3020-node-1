@@ -10,14 +10,15 @@ let input = getargs.getIntegerArg();
 
 // test that input is a number
 // TODO use the if statement to check input using isNaN and NOT Number.isInteger 
-if () {
-  // TODO use console.log to provide a usage statement when user forgets to enter a number
+if (isNaN (input) || !Number .isInteger(input)) {
+  // added usage statement if user fails to enter a number
+  console.log("usage:node 2-odd-even <integer>");
 } else {
-  // TODO use the if statement to test if integer is divisible by 2
-  if () {
-    //TODO use console.log with a template literal to report that the number is even
-
+    if (input % 2==0) {
+    console.log('${input} is even!');
   } else {
-    //TODO use console.log with a template literal to report that the number is odd
+    console.log('${input} is odd!');
+   }
+
   }
-}
+  
